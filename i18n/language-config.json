@@ -1,0 +1,27 @@
+{
+  "locales": [
+    {
+      "code": "en",
+      "displayName": "English",
+      "nativeName": "English",
+      "flag": "🇺🇸",
+      "isDefault": true,
+      "enabled": true,
+      "dateFormat": "MM/DD/YYYY",
+      "direction": "ltr"
+    },
+    {
+      "code": "zh",
+      "displayName": "Chinese",
+      "nativeName": "中文",
+      "flag": "🇨🇳",
+      "isDefault": false,
+      "enabled": true,
+      "dateFormat": "YYYY/MM/DD",
+      "direction": "ltr"
+    }
+  ],
+  "defaultLocale": "en",
+  "fallbackLocale": "en",
+  "routingStrategy": "prefix-except-default"
+}

@@ -1,0 +1,23 @@
+---
+description: 
+globs: *.tsx
+alwaysApply: false
+---
+
+# When Creating a Page or GUI Component
+
+- Be sure to use the dictionary files in `./messages/` for labels to they will be properly translated into all locales in our configuration
+- Avoid using getTranslation() which requires the value of locale. Use useTranslation() which does not require the locale params. Example:
+```javascript
+export function HomeTitle() {
+  const ct = useTranslations("Common");
+  const mt = useTranslations("meta");
+
+  return (
+    <>
+      <h1 className="text-2xl font-bold mb-4">{ct("welcome")}</h1>
+      <p className="text-lg text-muted-foreground">{mt("description")}</p>
+    </>
+  );
+}
+```
